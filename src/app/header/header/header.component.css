@@ -1,0 +1,17 @@
+
+.header {
+  background-color: black;
+  margin: 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-note-add-button {
+  background-color: orangered;
+  color: white;
+  width: 20%;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 18px;
+}
