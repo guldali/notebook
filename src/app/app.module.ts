@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer/footer.component';
 import { HeaderComponent } from './header/header/header.component';
 import { NoteAddComponent } from './note-add/note-add.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { NoteListComponent } from './note-list/note-list.component';
+import { NoteCardComponent } from './note-card/note-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
     FooterComponent,
     HeaderComponent,
     NoteAddComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    NoteListComponent,
+    NoteCardComponent
   ],
   imports: [
     BrowserModule,

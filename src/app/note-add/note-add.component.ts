@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Note } from '../shared/note.module';
+import { NotesService } from '../shared/notes.service';
 
 @Component({
   selector: 'app-note-add',
@@ -9,17 +11,19 @@ import { Note } from '../shared/note.module';
 })
 export class NoteAddComponent implements OnInit {
 
-  note: Note
+  note: Note;
 
-  constructor() { }
+  constructor(private notesService: NotesService, private router: Router) { }
 
   ngOnInit(): void {
     this.note = new Note();
   }
 
-  onSubmit(form: NgForm): void {
-    console.log(form)
-
+  onSubmit(form: NgForm) {
+    this.notesService.add(form.value);
+    console.log(form.value);
+    console.log(this.note);
+    this.router.navigateByUrl('/');
   }
 
 }
