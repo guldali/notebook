@@ -1,5 +1,6 @@
-<div class="note-list">
-    <app-note-card *ngFor="let note of notes"
-    [title]="note.title" [body]="note.body">
-    </app-note-card>
-</div>
+<div class="card">
+    <div *ngFor="let note of notes" class="container">
+      <h4><b>{{note.title}}</b></h4>
+      <p>{{note.body}}</p>
+    </div>
+  </div>

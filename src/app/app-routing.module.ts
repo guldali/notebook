@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'header-component', component: HeaderComponent },
   { path: 'footer-component', component: FooterComponent },
   { path: 'note-add-component', component: NoteAddComponent },
+  { path: 'note-list-component', component: NoteListComponent },
 ];
 
 @NgModule({
