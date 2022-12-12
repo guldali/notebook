@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: '', component: NoteListComponent},
   { path: 'header-component', component: HeaderComponent },
   { path: 'footer-component', component: FooterComponent },
-  { path: 'note-add-component', component: NoteAddComponent },
+  { path: 'new', component: NoteAddComponent },
+  //{ path: ':id', component: NoteAddComponent },
   { path: 'note-list-component', component: NoteListComponent },
 ];
 
