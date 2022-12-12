@@ -21,8 +21,6 @@ export class NoteAddComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     this.notesService.add(form.value);
-    console.log(form.value);
-    console.log(this.note);
     this.router.navigateByUrl('/');
   }
 
